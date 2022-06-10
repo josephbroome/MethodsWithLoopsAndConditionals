@@ -4,17 +4,17 @@ class Program
 
     static void Main(string[] args)
     {
+        //PrintRangeHightoLow(1000, -1000);
 
-        //IsnumberOdd(11);
+        //NumbersByThree();
 
-        //IsnumberPositive(5);
+        AreNumbersEqual(1);
 
-        //AreNumbersEqual(2);
+        OddorEven(1);
 
-        //LegalVotingAge(5);
-        //PrintRangeHightoLow(1000,-1000);
-
-        NumbersByThree();
+        IsnumberPositive(1);
+        
+        LegalVotingAge(1);
     
     }
   public static void NumbersByThree()
@@ -54,13 +54,13 @@ class Program
         }
     }
 
-    public static void LegalVotingAge(int number)
+    public static void LegalVotingAge(int userAge)
     {
         Console.WriteLine("Welcome to our voting website, you must be 18 or over to participate.");
         Console.WriteLine("Enter your age");
         var legalAge = 18;
-        number = int.Parse(Console.ReadLine());
-        if (number >= legalAge)
+        userAge = int.Parse(Console.ReadLine());
+        if (userAge >= legalAge)
         {
 
             Console.WriteLine("you are able to vote");
@@ -93,7 +93,7 @@ class Program
     }
 
 
-  public static void IsnumberOdd(int number)
+  public static void OddorEven(int number)
     {
         Console.WriteLine("Give me a number and i will tell if its even or odd");
         number = int.Parse(Console.ReadLine());
