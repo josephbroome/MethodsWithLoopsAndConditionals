@@ -51,11 +51,11 @@ class Program
         if (number == number1)
         {
 
-            Console.WriteLine("numbers are equal");
+            Console.WriteLine($"{number} and {number1} are equal");
         }
         else
         {
-            Console.WriteLine("the number are not equal");
+            Console.WriteLine($"{number} and {number1} are not equal");
         }
     }
 
