@@ -4,19 +4,19 @@ class Program
 
             static void Main(string[] args)
             {
-        //PrintRangeHightoLow(1000, -1000);
+                PrintRangeHightoLow(1000, -1000);
 
-        //NumbersByThree();
+                NumbersByThree();
 
-        //AreNumbersEqual(1);
+                AreNumbersEqual(1);
 
-        //OddorEven(1);
+                OddorEven(1);
 
-        //IsnumberPositive(1);
+                IsnumberPositive(1);
 
-        //LegalVotingAge(1);
+                LegalVotingAge(1);
 
-             NegativeorPositive(-1);
+                NegativeorPositive(-1);
             
             
             }
