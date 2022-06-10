@@ -2,24 +2,25 @@
 class Program
 {
 
-    static void Main(string[] args)
+            static void Main(string[] args)
+            {
+                PrintRangeHightoLow(1000, -1000);
+
+                NumbersByThree();
+
+                AreNumbersEqual(1);
+
+                OddorEven(1);
+
+                IsnumberPositive(1);
+
+                LegalVotingAge(1);
+            }
+
+
+    public static void NumbersByThree()
     {
-        //PrintRangeHightoLow(1000, -1000);
-
-        //NumbersByThree();
-
-        AreNumbersEqual(1);
-
-        OddorEven(1);
-
-        IsnumberPositive(1);
-        
-        LegalVotingAge(1);
-    
-    }
-  public static void NumbersByThree()
-    {
-       for (int a =3; a<=999; a+=3)
+        for (int a =3; a<=999; a+=3)
         {
             Console.WriteLine(a);
         }
@@ -94,7 +95,7 @@ class Program
 
 
   public static void OddorEven(int number)
-    {
+  {
         Console.WriteLine("Give me a number and i will tell if its even or odd");
         number = int.Parse(Console.ReadLine());
         if (number % 2 != 0)
@@ -108,14 +109,14 @@ class Program
         }
 
 
-    }
+  }
 
 
 
 
 
 
-}
+}   
 
 
 
