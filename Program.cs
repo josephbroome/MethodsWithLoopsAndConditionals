@@ -4,34 +4,28 @@ class Program
 
             static void Main(string[] args)
     {
-            //PrintRangeHightoLow(1000, -1000);
+        PrintRangeHightoLow(1000, -1000);
 
-            //NumbersByThree();
+        NumbersByThree();
 
-            // AreNumbersEqual();
+        AreNumbersEqual();
 
-            //OddorEven();
+        OddorEven();
 
-            // IsnumberPositive();
+        IsnumberPositive();
 
-            //LegalVotingAge();
+        LegalVotingAge();
 
-            //Rangecheck();
+        Rangecheck();
 
-        var y= new List<int>();
 
-        for(int i=1; i<=12; i++)
-        {
-            y.Add(i);
-            for (int j=1; j<=i; j*=i)
-            {
-                Console.WriteLine(j);
-            }
-        }
-        
-        
-       
-    
+
+
+
+
+
+
+
     }
 
 
