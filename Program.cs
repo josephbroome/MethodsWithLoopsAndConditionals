@@ -3,23 +3,32 @@ class Program
 {
 
             static void Main(string[] args)
-            {
-                PrintRangeHightoLow(1000, -1000);
+    {
+            //PrintRangeHightoLow(1000, -1000);
 
-                NumbersByThree();
+            //NumbersByThree();
 
-                AreNumbersEqual(1);
+            // AreNumbersEqual();
 
-                OddorEven(1);
+            //OddorEven();
 
-                IsnumberPositive(1);
+            // IsnumberPositive();
 
-                LegalVotingAge(1);
+            //LegalVotingAge();
 
-                NegativeorPositive(-1);
+            //Rangecheck();
+
+        var y= new List<int>();
+
+        for(int i=0; i<=12; i++)
+        {
+            y.Add(i);
             
-            
-            }
+        var x = 5;
+
+        Console.Write(x *= 3);
+        Console.WriteLine(y[i]);
+    }
 
 
     public static void NumbersByThree()
@@ -43,36 +52,48 @@ class Program
 
 
     }
-    public static void AreNumbersEqual(int number)
+    public static void AreNumbersEqual()
     {
+        bool numbersEqual;
+        
+        
         Console.WriteLine("Give me two numbers and i will tell if they are equal or not");
-        number = int.Parse(Console.ReadLine());
+        int number = int.Parse(Console.ReadLine());
         int number1 = int.Parse(Console.ReadLine());
         if (number == number1)
         {
 
             Console.WriteLine($"{number} and {number1} are equal");
+            numbersEqual = true;
         }
         else
         {
             Console.WriteLine($"{number} and {number1} are not equal");
+        
+            numbersEqual= false;    
         }
     }
 
-    public static void LegalVotingAge(int userAge)
+    public static void LegalVotingAge()
     {
+        bool legalVote; 
+        
+        
         Console.WriteLine("Welcome to our voting website, you must be 18 or over to participate.");
         Console.WriteLine("Enter your age");
-        var legalAge = 18;
-        userAge = int.Parse(Console.ReadLine());
+        int legalAge = 18;
+        int userAge = int.Parse(Console.ReadLine());
         if (userAge >= legalAge)
         {
 
             Console.WriteLine("you are able to vote");
+            legalVote=true;
         }
         else
         {
             Console.WriteLine("try again in a few years");
+            legalVote = false;
+        
         }
 
 
@@ -80,18 +101,22 @@ class Program
 
 
 
-    public static void IsnumberPositive(int number)
+    public static void IsnumberPositive()
     {
+        bool positiveNumber;
         Console.WriteLine("Give me a number and i will tell if its positive or negative");
-        number = int.Parse(Console.ReadLine());
+        int number = int.Parse(Console.ReadLine());
         if (number >= 0)
         {
 
-            Console.WriteLine("the number is positive");
+            Console.WriteLine($"{number} is positive");
+            positiveNumber = true;
         }
         else
         {
-            Console.WriteLine("the number is Negative");
+            Console.WriteLine($"{number} is Negative");
+        
+            positiveNumber=false;
         }
 
 
@@ -99,36 +124,58 @@ class Program
 
     }
 
-    public static void NegativeorPositive(int a)
-    {
-        if (a >= 0)
-        {
-            Console.WriteLine("Positve");
+    public static void Rangecheck()
 
-        }
-        else
-        {
-            Console.WriteLine("Negative");
-        }
+    {
+        bool inRange;
+        
+        do
+        { 
+            Console.WriteLine("Give me a number and i will tell if its between -10 and 10 ");
+            int userNumber = int.Parse(Console.ReadLine());
         
 
 
+                if (userNumber >= -10 && userNumber <= 10)
+                {
+                    Console.WriteLine($"{userNumber} is in range");
+                    inRange = true;
+                }
+                else
+                {   
+                    Console.WriteLine($"{userNumber} is not range");
+                    inRange= false;
+                }
 
 
+
+        } while (inRange==false);
+
+    
 
     }
-  public static void OddorEven(int number)
+
+
+
+
+    
+  public static void OddorEven()
   {
+        bool oddEven;
+        
         Console.WriteLine("Give me a number and i will tell if its even or odd");
-        number = int.Parse(Console.ReadLine());
+        int number = int.Parse(Console.ReadLine());
         if (number % 2 != 0)
         {
 
-            Console.WriteLine("the number is odd");
+            Console.WriteLine($"{number} is odd");
+            oddEven = true; 
         }
         else
         {
-            Console.WriteLine("the number is even");
+            Console.WriteLine($"{number} is even");
+            oddEven = false;
+        
         }
 
 
@@ -136,7 +183,12 @@ class Program
 
 
 
+ public static void MultiplicatonTable(int x)
+    {
 
+        
+
+    }
 
 
 }   
