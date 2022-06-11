@@ -20,14 +20,18 @@ class Program
 
         var y= new List<int>();
 
-        for(int i=0; i<=12; i++)
+        for(int i=1; i<=12; i++)
         {
             y.Add(i);
-            
-        var x = 5;
-
-        Console.Write(x *= 3);
-        Console.WriteLine(y[i]);
+            for (int j=1; j<=i; j*=i)
+            {
+                Console.WriteLine(j);
+            }
+        }
+        
+        
+       
+    
     }
 
 
