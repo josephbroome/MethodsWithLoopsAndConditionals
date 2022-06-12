@@ -56,8 +56,8 @@ class Program
         
         
         Console.WriteLine("Give me two numbers and i will tell if they are equal or not");
-        int number = int.Parse(Console.ReadLine());
-        int number1 = int.Parse(Console.ReadLine());
+        double number = double.Parse(Console.ReadLine());
+        double number1 = double.Parse(Console.ReadLine());
         if (number == number1)
         {
 
@@ -89,7 +89,7 @@ class Program
         }
         else
         {
-            Console.WriteLine("try again in a few years");
+            Console.WriteLine(("Try again in ") + (legalAge - userAge)+("years"));
             legalVote = false;
         
         }
@@ -103,7 +103,7 @@ class Program
     {
         bool positiveNumber;
         Console.WriteLine("Give me a number and i will tell if its positive or negative");
-        int number = int.Parse(Console.ReadLine());
+        double number = double.Parse(Console.ReadLine());
         if (number >= 0)
         {
 
@@ -162,7 +162,7 @@ class Program
         bool oddEven;
         
         Console.WriteLine("Give me a number and i will tell if its even or odd");
-        int number = int.Parse(Console.ReadLine());
+        double number = double.Parse(Console.ReadLine());
         if (number % 2 != 0)
         {
 
