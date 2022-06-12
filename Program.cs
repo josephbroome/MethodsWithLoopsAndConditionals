@@ -56,8 +56,8 @@ class Program
         
         
         Console.WriteLine("Give me two numbers and i will tell if they are equal or not");
-        double number = double.Parse(Console.ReadLine());
-        double number1 = double.Parse(Console.ReadLine());
+        var number = double.Parse(Console.ReadLine());
+        var number1 = double.Parse(Console.ReadLine());
         if (number == number1)
         {
 
@@ -74,27 +74,28 @@ class Program
 
     public static void LegalVotingAge()
     {
-        bool legalVote; 
-        
-        
-        Console.WriteLine("Welcome to our voting website, you must be 18 or over to participate.");
-        Console.WriteLine("Enter your age");
-        int legalAge = 18;
-        int userAge = int.Parse(Console.ReadLine());
-        if (userAge >= legalAge)
+        bool legalVote;
+
+        do
         {
+            Console.WriteLine("Welcome to our voting website, you must be 18 or over to participate.");
+            Console.WriteLine("Enter your age");
+            int legalAge = 18;
+            int userAge = int.Parse(Console.ReadLine());
+            if (userAge >= legalAge)
+            {
 
-            Console.WriteLine("you are able to vote");
-            legalVote=true;
-        }
-        else
-        {
-            Console.WriteLine(("Try again in ") + (legalAge - userAge)+ ("years"));
-            legalVote = false;
-        
-        }
+                Console.WriteLine("you are able to vote");
+                legalVote = true;
+            }
+            else
+            {
+                Console.WriteLine(("Try again in ") + (legalAge - userAge) +  ("years"));
+                legalVote = false;
 
+            }
 
+        } while(legalVote==false);
     }
 
 
@@ -103,7 +104,7 @@ class Program
     {
         bool positiveNumber;
         Console.WriteLine("Give me a number and i will tell if its positive or negative");
-        double number = double.Parse(Console.ReadLine());
+        var number = double.Parse(Console.ReadLine());
         if (number >= 0)
         {
 
@@ -130,7 +131,7 @@ class Program
         do
         { 
             Console.WriteLine("Give me a number and i will tell if its between -10 and 10 ");
-            int userNumber = int.Parse(Console.ReadLine());
+            var userNumber = double.Parse(Console.ReadLine());
         
 
 
@@ -162,7 +163,7 @@ class Program
         bool oddEven;
         
         Console.WriteLine("Give me a number and i will tell if its even or odd");
-        double number = double.Parse(Console.ReadLine());
+        var number = double.Parse(Console.ReadLine());
         if (number % 2 != 0)
         {
 
